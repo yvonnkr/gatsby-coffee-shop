@@ -1,10 +1,16 @@
-import React from "react"
+import React from "react";
 
-import "./bootstrap.min.css"
-import "./layout.css"
+import "./bootstrap.min.css";
+import "./layout.css";
+import Navbar from "./Globals/Navbar";
 
 const Layout = ({ children }) => {
-  return <>{children}</>
-}
+  return (
+    <>
+      <Navbar />
+      {children}
+    </>
+  );
+};
 
-export default Layout
+export default Layout;
